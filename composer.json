@@ -1,6 +1,13 @@
 {
   "name": "tests/courses",
   "description": "CI/CD with units and integration tests",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Quentin Moreau",
+      "role": "Developer"
+    }
+  ],
   "autoload": {
     "classmap": [
       "src/"
