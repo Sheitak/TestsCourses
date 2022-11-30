@@ -1,4 +1,6 @@
 {
+  "name": "tests/courses",
+  "description": "CI/CD with units and integration tests",
   "autoload": {
     "classmap": [
       "src/"
