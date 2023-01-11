@@ -4,7 +4,6 @@ namespace TestsCourses\Object;
 use RuntimeException;
 
 class Calculate {
-
     public function additional($x, $y): float|int
     {
         if (is_string($x) || is_string($y)) {

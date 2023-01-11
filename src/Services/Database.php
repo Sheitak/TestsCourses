@@ -6,7 +6,7 @@ class Database extends SQLite3
 {
     public function __construct()
     {
-        SQLite3::__construct('../../../../mysqlitedb.db', SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE, "");
+        SQLite3::__construct('mysqlitedb.db');
     }
 
     public function resetTable(): void

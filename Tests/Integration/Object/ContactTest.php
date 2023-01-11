@@ -58,12 +58,4 @@ class ContactTest extends TestCase
         $this->assertEquals($newJohnDoe["firstname"], $new->getFirstname());
         $this->assertEquals($newJohnDoe["lastname"], $new->getLastname());
     }
-
-//    public function testReadContact() {
-//
-//    }
-//
-//    public function testDeleteContact() {
-//
-//    }
 }
