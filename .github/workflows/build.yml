@@ -34,7 +34,7 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     - name: Update dependencies
-      run: composer update
+      run: composer update --no-ansi --no-interaction --no-progress
     - name: Run tests with phpunit/phpunit
       run: vendor/bin/phpunit --coverage-clover=coverage/coverage.xml
     - name: Fix code coverage paths
