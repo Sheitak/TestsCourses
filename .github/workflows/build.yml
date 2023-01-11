@@ -58,7 +58,7 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: coverage-artifact
-          path: coverage/coverage.xml
+          path: coverage
       - run: cd coverage && ls -ail
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
