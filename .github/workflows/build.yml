@@ -43,6 +43,7 @@ jobs:
       with:
         name: coverage-artifact
         path: coverage/coverage.xml
+    - run: cd coverage && ls-ail
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
@@ -58,6 +59,7 @@ jobs:
         with:
           name: coverage-artifact
           path: coverage/coverage.xml
+      - run: cd coverage && ls-ail
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
