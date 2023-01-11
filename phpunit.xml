@@ -13,7 +13,7 @@
             <directory>Tests</directory>
         </testsuite>
     </testsuites>
-    <coverage cacheDirectory="./coverage/cache"
+    <coverage cacheDirectory="coverage/cache"
               includeUncoveredFiles="true"
               processUncoveredFiles="true"
               pathCoverage="false"
@@ -24,10 +24,10 @@
         </include>
     </coverage>
     <logging>
-        <junit outputFile="./coverage/junit.xml"/>
-        <testdoxHtml outputFile="./coverage/coverage.html"/>
-        <testdoxXml outputFile="./coverage/coverage.xml"/>
-        <text outputFile="./coverage/coveragelog.txt"/>
+        <junit outputFile="coverage/junit.xml"/>
+        <testdoxHtml outputFile="coverage/coverage.html"/>
+        <testdoxXml outputFile="coverage/coverage.xml"/>
+        <text outputFile="coverage/coveragelog.txt"/>
     </logging>
     <php>
         <env name="APP_ENV" value="testing"/>
