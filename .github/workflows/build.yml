@@ -39,12 +39,14 @@ jobs:
       run: vendor/bin/phpunit --coverage-clover=coverage/coverage.xml
     - name: Fix code coverage paths
       run: sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' coverage/coverage.xml
+    - uses: actions/upload-artifact@master
+      with:
+        name: coverage-artifact
+        path: coverage/coverage.xml
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
-    # - name: Run test suite
-    #   run: composer run-script test
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
@@ -52,6 +54,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - uses: actions/download-artifact@master
+        with:
+          name: coverage-artifact
+          path: coverage/coverage.xml
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
