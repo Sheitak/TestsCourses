@@ -59,11 +59,11 @@ class ContactTest extends TestCase
         $this->assertEquals($newJohnDoe["lastname"], $new->getLastname());
     }
 
-    public function testReadContact() {
-
-    }
-
-    public function testDeleteContact() {
-
-    }
+//    public function testReadContact() {
+//
+//    }
+//
+//    public function testDeleteContact() {
+//
+//    }
 }

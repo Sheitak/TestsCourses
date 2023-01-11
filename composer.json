@@ -14,9 +14,9 @@
     ]
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest"
-    ,
-    "phpunit/phpunit": "^9"
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9",
+    "phpunit/php-code-coverage": "^9.2"
   },
   "require": {
     "ext-pdo": "*",
